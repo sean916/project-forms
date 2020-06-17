@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Project Forms</title>
+    </head>
+    <body>
+        <h1>Sign-up Form</h1>
+        <form>
+            <span>(Required) Please enter an email address:</span>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+            <br>
+
+            <span>(Required) Country:</span>
+            <input id="country" name="country" type="text" pattern="[A-Za-z]{3,}" required>
+            <span class="error" id="countryError"></span>
+            <br>
+            
+            <span>(Required) Enter your 5-digit Zip Code:</span>
+            <input id="zipCode" name="zipCode" type="text" pattern="[0-9]{5}" required>
+            <span class="error" id="zipCodeError"></span>
+            <br>
+
+            <span>(Required) Password (at least 4 characters long):</span>
+            <input id="password1" name="password1" type="password" minLength="4" required>
+            <span class="error" id="password1Error"></span>
+            <br>
+
+            <span>(Required) Confirm Password:</span>
+            <input id="password2" name="password2" type="password" minLength="4" required>
+            <span class="error" id="password2Error"></span>
+            <br>
+
+        </form>
+        <button id="submitBtn">Submit</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
